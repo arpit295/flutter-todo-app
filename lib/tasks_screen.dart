@@ -99,7 +99,8 @@ class _TasksScreenState extends State<TasksScreen> {
                   messageBubbles.add(MessageBubble(
                       name: messageText,
                       isDone: false)); // ✅ नया टास्क लिस्ट में ऐड करना
-                  saveTasks(); // ✅ Save tasks to SharedPreferences
+                  saveTasks();
+                  messageText = ''; // ✅ Save tasks to SharedPreferences
                   Navigator.pop(context); // ✅ BottomSheet बंद करना
                 }
               });
