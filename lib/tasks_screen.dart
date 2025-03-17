@@ -79,11 +79,13 @@ class _TasksScreenState extends State<TasksScreen> {
           SizedBox(
             width: 330,
             child: TextField(
-              autofocus: true,
               onChanged: (value) {
                 messageText = value; // ✅ TextField से डेटा लेना
               },
               decoration: InputDecoration(
+                enabledBorder: UnderlineInputBorder(
+                    borderSide:
+                        BorderSide(color: Colors.lightBlueAccent, width: 3)),
                 focusedBorder: UnderlineInputBorder(
                   borderSide:
                       BorderSide(color: Colors.lightBlueAccent, width: 3),
